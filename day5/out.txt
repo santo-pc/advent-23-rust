@@ -1,0 +1,560 @@
+Mappers: [Mapper { name: "humidity-to-location map:", table: {56..94: 60..98, 93..98: 56..61}, inverse_table: {60..98: 56..94, 56..61: 93..98} }, Mapper { name: "temperature-to-humidity map:", table: {0..70: 1..71, 69..71: 0..2}, inverse_table: {0..2: 69..71, 1..71: 0..70} }, Mapper { name: "light-to-temperature map:", table: {45..65: 81..101, 64..78: 68..82, 77..101: 45..69}, inverse_table: {68..82: 64..78, 45..69: 77..101, 81..101: 45..65} }, Mapper { name: "water-to-light map:", table: {18..26: 88..96, 25..96: 18..89}, inverse_table: {88..96: 18..26, 18..89: 25..96} }, Mapper { name: "fertilizer-to-water map:", table: {53..62: 49..58, 7..12: 57..62, 0..8: 42..50, 11..54: 0..43}, inverse_table: {0..43: 11..54, 42..50: 0..8, 49..58: 53..62, 57..62: 7..12} }, Mapper { name: "soil-to-fertilizer map:", table: {0..16: 39..55, 15..53: 0..38, 52..55: 37..40}, inverse_table: {0..38: 15..53, 37..40: 52..55, 39..55: 0..16} }, Mapper { name: "seed-to-soil map:", table: {98..101: 50..53, 50..99: 52..101}, inverse_table: {50..53: 98..101, 52..101: 50..99} }, Mapper { name: "", table: {}, inverse_table: {} }]
+Locations: [56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 93, 94, 95, 96, 97]
+Found in mapper "humidity-to-location map:": 56-> 93
+Not Found in mapper "temperature-to-humidity map:" using num 93
+Found in mapper "light-to-temperature map:": 93-> 57
+Found in mapper "water-to-light map:": 57-> 64
+Not Found in mapper "fertilizer-to-water map:" using num 64
+Not Found in mapper "soil-to-fertilizer map:" using num 64
+Found in mapper "seed-to-soil map:": 64-> 62
+Found in mapper "humidity-to-location map:": 57-> 94
+Not Found in mapper "temperature-to-humidity map:" using num 94
+Found in mapper "light-to-temperature map:": 94-> 58
+Found in mapper "water-to-light map:": 58-> 65
+Not Found in mapper "fertilizer-to-water map:" using num 65
+Not Found in mapper "soil-to-fertilizer map:" using num 65
+Found in mapper "seed-to-soil map:": 65-> 63
+Found in mapper "humidity-to-location map:": 58-> 95
+Not Found in mapper "temperature-to-humidity map:" using num 95
+Found in mapper "light-to-temperature map:": 95-> 59
+Found in mapper "water-to-light map:": 59-> 66
+Not Found in mapper "fertilizer-to-water map:" using num 66
+Not Found in mapper "soil-to-fertilizer map:" using num 66
+Found in mapper "seed-to-soil map:": 66-> 64
+Found in mapper "humidity-to-location map:": 59-> 96
+Not Found in mapper "temperature-to-humidity map:" using num 96
+Found in mapper "light-to-temperature map:": 96-> 60
+Found in mapper "water-to-light map:": 60-> 67
+Not Found in mapper "fertilizer-to-water map:" using num 67
+Not Found in mapper "soil-to-fertilizer map:" using num 67
+Found in mapper "seed-to-soil map:": 67-> 65
+Found in mapper "humidity-to-location map:": 60-> 56
+Found in mapper "temperature-to-humidity map:": 56-> 55
+Found in mapper "light-to-temperature map:": 55-> 87
+Found in mapper "water-to-light map:": 87-> 94
+Not Found in mapper "fertilizer-to-water map:" using num 94
+Not Found in mapper "soil-to-fertilizer map:" using num 94
+Found in mapper "seed-to-soil map:": 94-> 92
+Found in mapper "humidity-to-location map:": 61-> 57
+Found in mapper "temperature-to-humidity map:": 57-> 56
+Found in mapper "light-to-temperature map:": 56-> 88
+Found in mapper "water-to-light map:": 88-> 18
+Found in mapper "fertilizer-to-water map:": 18-> 29
+Found in mapper "soil-to-fertilizer map:": 29-> 44
+Not Found in mapper "seed-to-soil map:" using num 44
+Found in mapper "humidity-to-location map:": 62-> 58
+Found in mapper "temperature-to-humidity map:": 58-> 57
+Found in mapper "light-to-temperature map:": 57-> 89
+Found in mapper "water-to-light map:": 89-> 19
+Found in mapper "fertilizer-to-water map:": 19-> 30
+Found in mapper "soil-to-fertilizer map:": 30-> 45
+Not Found in mapper "seed-to-soil map:" using num 45
+Found in mapper "humidity-to-location map:": 63-> 59
+Found in mapper "temperature-to-humidity map:": 59-> 58
+Found in mapper "light-to-temperature map:": 58-> 90
+Found in mapper "water-to-light map:": 90-> 20
+Found in mapper "fertilizer-to-water map:": 20-> 31
+Found in mapper "soil-to-fertilizer map:": 31-> 46
+Not Found in mapper "seed-to-soil map:" using num 46
+Found in mapper "humidity-to-location map:": 64-> 60
+Found in mapper "temperature-to-humidity map:": 60-> 59
+Found in mapper "light-to-temperature map:": 59-> 91
+Found in mapper "water-to-light map:": 91-> 21
+Found in mapper "fertilizer-to-water map:": 21-> 32
+Found in mapper "soil-to-fertilizer map:": 32-> 47
+Not Found in mapper "seed-to-soil map:" using num 47
+Found in mapper "humidity-to-location map:": 65-> 61
+Found in mapper "temperature-to-humidity map:": 61-> 60
+Found in mapper "light-to-temperature map:": 60-> 92
+Found in mapper "water-to-light map:": 92-> 22
+Found in mapper "fertilizer-to-water map:": 22-> 33
+Found in mapper "soil-to-fertilizer map:": 33-> 48
+Not Found in mapper "seed-to-soil map:" using num 48
+Found in mapper "humidity-to-location map:": 66-> 62
+Found in mapper "temperature-to-humidity map:": 62-> 61
+Found in mapper "light-to-temperature map:": 61-> 93
+Found in mapper "water-to-light map:": 93-> 23
+Found in mapper "fertilizer-to-water map:": 23-> 34
+Found in mapper "soil-to-fertilizer map:": 34-> 49
+Not Found in mapper "seed-to-soil map:" using num 49
+Found in mapper "humidity-to-location map:": 67-> 63
+Found in mapper "temperature-to-humidity map:": 63-> 62
+Found in mapper "light-to-temperature map:": 62-> 94
+Found in mapper "water-to-light map:": 94-> 24
+Found in mapper "fertilizer-to-water map:": 24-> 35
+Found in mapper "soil-to-fertilizer map:": 35-> 50
+Found in mapper "seed-to-soil map:": 50-> 98
+Found in mapper "humidity-to-location map:": 68-> 64
+Found in mapper "temperature-to-humidity map:": 64-> 63
+Found in mapper "light-to-temperature map:": 63-> 95
+Found in mapper "water-to-light map:": 95-> 25
+Found in mapper "fertilizer-to-water map:": 25-> 36
+Found in mapper "soil-to-fertilizer map:": 36-> 51
+Found in mapper "seed-to-soil map:": 51-> 99
+Found in mapper "humidity-to-location map:": 69-> 65
+Found in mapper "temperature-to-humidity map:": 65-> 64
+Found in mapper "light-to-temperature map:": 64-> 96
+Found in mapper "water-to-light map:": 96-> 26
+Found in mapper "fertilizer-to-water map:": 26-> 37
+Found in mapper "soil-to-fertilizer map:": 37-> 52
+Found in mapper "seed-to-soil map:": 52-> 100
+Found in mapper "humidity-to-location map:": 70-> 66
+Found in mapper "temperature-to-humidity map:": 66-> 65
+Found in mapper "light-to-temperature map:": 65-> 97
+Not Found in mapper "water-to-light map:" using num 97
+Not Found in mapper "fertilizer-to-water map:" using num 97
+Not Found in mapper "soil-to-fertilizer map:" using num 97
+Found in mapper "seed-to-soil map:": 97-> 95
+Found in mapper "humidity-to-location map:": 71-> 67
+Found in mapper "temperature-to-humidity map:": 67-> 66
+Found in mapper "light-to-temperature map:": 66-> 98
+Not Found in mapper "water-to-light map:" using num 98
+Not Found in mapper "fertilizer-to-water map:" using num 98
+Not Found in mapper "soil-to-fertilizer map:" using num 98
+Found in mapper "seed-to-soil map:": 98-> 96
+Found in mapper "humidity-to-location map:": 72-> 68
+Found in mapper "temperature-to-humidity map:": 68-> 67
+Found in mapper "light-to-temperature map:": 67-> 99
+Not Found in mapper "water-to-light map:" using num 99
+Not Found in mapper "fertilizer-to-water map:" using num 99
+Not Found in mapper "soil-to-fertilizer map:" using num 99
+Found in mapper "seed-to-soil map:": 99-> 97
+Found in mapper "humidity-to-location map:": 73-> 69
+Found in mapper "temperature-to-humidity map:": 69-> 68
+Found in mapper "light-to-temperature map:": 68-> 64
+Found in mapper "water-to-light map:": 64-> 71
+Not Found in mapper "fertilizer-to-water map:" using num 71
+Not Found in mapper "soil-to-fertilizer map:" using num 71
+Found in mapper "seed-to-soil map:": 71-> 69
+Found in mapper "humidity-to-location map:": 74-> 70
+Found in mapper "temperature-to-humidity map:": 70-> 69
+Found in mapper "light-to-temperature map:": 69-> 65
+Found in mapper "water-to-light map:": 65-> 72
+Not Found in mapper "fertilizer-to-water map:" using num 72
+Not Found in mapper "soil-to-fertilizer map:" using num 72
+Found in mapper "seed-to-soil map:": 72-> 70
+Found in mapper "humidity-to-location map:": 75-> 71
+Found in mapper "temperature-to-humidity map:": 71-> 70
+Found in mapper "light-to-temperature map:": 70-> 66
+Found in mapper "water-to-light map:": 66-> 73
+Not Found in mapper "fertilizer-to-water map:" using num 73
+Not Found in mapper "soil-to-fertilizer map:" using num 73
+Found in mapper "seed-to-soil map:": 73-> 71
+Found in mapper "humidity-to-location map:": 76-> 72
+Not Found in mapper "temperature-to-humidity map:" using num 72
+Found in mapper "light-to-temperature map:": 72-> 68
+Found in mapper "water-to-light map:": 68-> 75
+Not Found in mapper "fertilizer-to-water map:" using num 75
+Not Found in mapper "soil-to-fertilizer map:" using num 75
+Found in mapper "seed-to-soil map:": 75-> 73
+Found in mapper "humidity-to-location map:": 77-> 73
+Not Found in mapper "temperature-to-humidity map:" using num 73
+Found in mapper "light-to-temperature map:": 73-> 69
+Found in mapper "water-to-light map:": 69-> 76
+Not Found in mapper "fertilizer-to-water map:" using num 76
+Not Found in mapper "soil-to-fertilizer map:" using num 76
+Found in mapper "seed-to-soil map:": 76-> 74
+Found in mapper "humidity-to-location map:": 78-> 74
+Not Found in mapper "temperature-to-humidity map:" using num 74
+Found in mapper "light-to-temperature map:": 74-> 70
+Found in mapper "water-to-light map:": 70-> 77
+Not Found in mapper "fertilizer-to-water map:" using num 77
+Not Found in mapper "soil-to-fertilizer map:" using num 77
+Found in mapper "seed-to-soil map:": 77-> 75
+Found in mapper "humidity-to-location map:": 79-> 75
+Not Found in mapper "temperature-to-humidity map:" using num 75
+Found in mapper "light-to-temperature map:": 75-> 71
+Found in mapper "water-to-light map:": 71-> 78
+Not Found in mapper "fertilizer-to-water map:" using num 78
+Not Found in mapper "soil-to-fertilizer map:" using num 78
+Found in mapper "seed-to-soil map:": 78-> 76
+Found in mapper "humidity-to-location map:": 80-> 76
+Not Found in mapper "temperature-to-humidity map:" using num 76
+Found in mapper "light-to-temperature map:": 76-> 72
+Found in mapper "water-to-light map:": 72-> 79
+Not Found in mapper "fertilizer-to-water map:" using num 79
+Not Found in mapper "soil-to-fertilizer map:" using num 79
+Found in mapper "seed-to-soil map:": 79-> 77
+Found in mapper "humidity-to-location map:": 81-> 77
+Not Found in mapper "temperature-to-humidity map:" using num 77
+Found in mapper "light-to-temperature map:": 77-> 73
+Found in mapper "water-to-light map:": 73-> 80
+Not Found in mapper "fertilizer-to-water map:" using num 80
+Not Found in mapper "soil-to-fertilizer map:" using num 80
+Found in mapper "seed-to-soil map:": 80-> 78
+Found in mapper "humidity-to-location map:": 82-> 78
+Not Found in mapper "temperature-to-humidity map:" using num 78
+Found in mapper "light-to-temperature map:": 78-> 74
+Found in mapper "water-to-light map:": 74-> 81
+Not Found in mapper "fertilizer-to-water map:" using num 81
+Not Found in mapper "soil-to-fertilizer map:" using num 81
+Found in mapper "seed-to-soil map:": 81-> 79
+Found in mapper "humidity-to-location map:": 83-> 79
+Not Found in mapper "temperature-to-humidity map:" using num 79
+Found in mapper "light-to-temperature map:": 79-> 75
+Found in mapper "water-to-light map:": 75-> 82
+Not Found in mapper "fertilizer-to-water map:" using num 82
+Not Found in mapper "soil-to-fertilizer map:" using num 82
+Found in mapper "seed-to-soil map:": 82-> 80
+Found in mapper "humidity-to-location map:": 84-> 80
+Not Found in mapper "temperature-to-humidity map:" using num 80
+Found in mapper "light-to-temperature map:": 80-> 76
+Found in mapper "water-to-light map:": 76-> 83
+Not Found in mapper "fertilizer-to-water map:" using num 83
+Not Found in mapper "soil-to-fertilizer map:" using num 83
+Found in mapper "seed-to-soil map:": 83-> 81
+Found in mapper "humidity-to-location map:": 85-> 81
+Not Found in mapper "temperature-to-humidity map:" using num 81
+Found in mapper "light-to-temperature map:": 81-> 77
+Found in mapper "water-to-light map:": 77-> 84
+Not Found in mapper "fertilizer-to-water map:" using num 84
+Not Found in mapper "soil-to-fertilizer map:" using num 84
+Found in mapper "seed-to-soil map:": 84-> 82
+Found in mapper "humidity-to-location map:": 86-> 82
+Not Found in mapper "temperature-to-humidity map:" using num 82
+Found in mapper "light-to-temperature map:": 82-> 78
+Found in mapper "water-to-light map:": 78-> 85
+Not Found in mapper "fertilizer-to-water map:" using num 85
+Not Found in mapper "soil-to-fertilizer map:" using num 85
+Found in mapper "seed-to-soil map:": 85-> 83
+Found in mapper "humidity-to-location map:": 87-> 83
+Not Found in mapper "temperature-to-humidity map:" using num 83
+Found in mapper "light-to-temperature map:": 83-> 47
+Found in mapper "water-to-light map:": 47-> 54
+Found in mapper "fertilizer-to-water map:": 54-> 58
+Not Found in mapper "soil-to-fertilizer map:" using num 58
+Found in mapper "seed-to-soil map:": 58-> 56
+Found in mapper "humidity-to-location map:": 88-> 84
+Not Found in mapper "temperature-to-humidity map:" using num 84
+Found in mapper "light-to-temperature map:": 84-> 48
+Found in mapper "water-to-light map:": 48-> 55
+Found in mapper "fertilizer-to-water map:": 55-> 59
+Not Found in mapper "soil-to-fertilizer map:" using num 59
+Found in mapper "seed-to-soil map:": 59-> 57
+Found in mapper "humidity-to-location map:": 89-> 85
+Not Found in mapper "temperature-to-humidity map:" using num 85
+Found in mapper "light-to-temperature map:": 85-> 49
+Found in mapper "water-to-light map:": 49-> 56
+Found in mapper "fertilizer-to-water map:": 56-> 60
+Not Found in mapper "soil-to-fertilizer map:" using num 60
+Found in mapper "seed-to-soil map:": 60-> 58
+Found in mapper "humidity-to-location map:": 90-> 86
+Not Found in mapper "temperature-to-humidity map:" using num 86
+Found in mapper "light-to-temperature map:": 86-> 50
+Found in mapper "water-to-light map:": 50-> 57
+Found in mapper "fertilizer-to-water map:": 57-> 61
+Not Found in mapper "soil-to-fertilizer map:" using num 61
+Found in mapper "seed-to-soil map:": 61-> 59
+Found in mapper "humidity-to-location map:": 91-> 87
+Not Found in mapper "temperature-to-humidity map:" using num 87
+Found in mapper "light-to-temperature map:": 87-> 51
+Found in mapper "water-to-light map:": 51-> 58
+Found in mapper "fertilizer-to-water map:": 58-> 62
+Not Found in mapper "soil-to-fertilizer map:" using num 62
+Found in mapper "seed-to-soil map:": 62-> 60
+Found in mapper "humidity-to-location map:": 92-> 88
+Not Found in mapper "temperature-to-humidity map:" using num 88
+Found in mapper "light-to-temperature map:": 88-> 52
+Found in mapper "water-to-light map:": 52-> 59
+Found in mapper "fertilizer-to-water map:": 59-> 9
+Found in mapper "soil-to-fertilizer map:": 9-> 24
+Not Found in mapper "seed-to-soil map:" using num 24
+Found in mapper "humidity-to-location map:": 93-> 89
+Not Found in mapper "temperature-to-humidity map:" using num 89
+Found in mapper "light-to-temperature map:": 89-> 53
+Found in mapper "water-to-light map:": 53-> 60
+Found in mapper "fertilizer-to-water map:": 60-> 10
+Found in mapper "soil-to-fertilizer map:": 10-> 25
+Not Found in mapper "seed-to-soil map:" using num 25
+Found in mapper "humidity-to-location map:": 93-> 89
+Not Found in mapper "temperature-to-humidity map:" using num 89
+Found in mapper "light-to-temperature map:": 89-> 53
+Found in mapper "water-to-light map:": 53-> 60
+Found in mapper "fertilizer-to-water map:": 60-> 10
+Found in mapper "soil-to-fertilizer map:": 10-> 25
+Not Found in mapper "seed-to-soil map:" using num 25
+Found in mapper "humidity-to-location map:": 94-> 90
+Not Found in mapper "temperature-to-humidity map:" using num 90
+Found in mapper "light-to-temperature map:": 90-> 54
+Found in mapper "water-to-light map:": 54-> 61
+Found in mapper "fertilizer-to-water map:": 61-> 11
+Found in mapper "soil-to-fertilizer map:": 11-> 26
+Not Found in mapper "seed-to-soil map:" using num 26
+Found in mapper "humidity-to-location map:": 95-> 91
+Not Found in mapper "temperature-to-humidity map:" using num 91
+Found in mapper "light-to-temperature map:": 91-> 55
+Found in mapper "water-to-light map:": 55-> 62
+Found in mapper "fertilizer-to-water map:": 62-> 12
+Found in mapper "soil-to-fertilizer map:": 12-> 27
+Not Found in mapper "seed-to-soil map:" using num 27
+Found in mapper "humidity-to-location map:": 96-> 92
+Not Found in mapper "temperature-to-humidity map:" using num 92
+Found in mapper "light-to-temperature map:": 92-> 56
+Found in mapper "water-to-light map:": 56-> 63
+Not Found in mapper "fertilizer-to-water map:" using num 63
+Not Found in mapper "soil-to-fertilizer map:" using num 63
+Found in mapper "seed-to-soil map:": 63-> 61
+Found in mapper "humidity-to-location map:": 97-> 93
+Not Found in mapper "temperature-to-humidity map:" using num 93
+Found in mapper "light-to-temperature map:": 93-> 57
+Found in mapper "water-to-light map:": 57-> 64
+Not Found in mapper "fertilizer-to-water map:" using num 64
+Not Found in mapper "soil-to-fertilizer map:" using num 64
+Found in mapper "seed-to-soil map:": 64-> 62
+Min Location: 82
+Mappers: [Mapper { name: "humidity-to-location map:", table: {93..98: 56..61, 56..94: 60..98}, inverse_table: {56..61: 93..98, 60..98: 56..94} }, Mapper { name: "temperature-to-humidity map:", table: {69..71: 0..2, 0..70: 1..71}, inverse_table: {0..2: 69..71, 1..71: 0..70} }, Mapper { name: "light-to-temperature map:", table: {77..101: 45..69, 45..65: 81..101, 64..78: 68..82}, inverse_table: {81..101: 45..65, 68..82: 64..78, 45..69: 77..101} }, Mapper { name: "water-to-light map:", table: {18..26: 88..96, 25..96: 18..89}, inverse_table: {18..89: 25..96, 88..96: 18..26} }, Mapper { name: "fertilizer-to-water map:", table: {53..62: 49..58, 11..54: 0..43, 0..8: 42..50, 7..12: 57..62}, inverse_table: {0..43: 11..54, 42..50: 0..8, 57..62: 7..12, 49..58: 53..62} }, Mapper { name: "soil-to-fertilizer map:", table: {15..53: 0..38, 52..55: 37..40, 0..16: 39..55}, inverse_table: {0..38: 15..53, 37..40: 52..55, 39..55: 0..16} }, Mapper { name: "seed-to-soil map:", table: {50..99: 52..101, 98..101: 50..53}, inverse_table: {50..53: 98..101, 52..101: 50..99} }, Mapper { name: "", table: {}, inverse_table: {} }]
+Locations: [93, 94, 95, 96, 97, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93]
+Not Found in mapper "humidity-to-location map:" using num 0
+Found in mapper "temperature-to-humidity map:": 0-> 69
+Found in mapper "light-to-temperature map:": 69-> 65
+Found in mapper "water-to-light map:": 65-> 72
+Not Found in mapper "fertilizer-to-water map:" using num 72
+Not Found in mapper "soil-to-fertilizer map:" using num 72
+Found in mapper "seed-to-soil map:": 72-> 70
+Not Found in mapper "humidity-to-location map:" using num 1
+Found in mapper "temperature-to-humidity map:": 1-> 70
+Found in mapper "light-to-temperature map:": 70-> 66
+Found in mapper "water-to-light map:": 66-> 73
+Not Found in mapper "fertilizer-to-water map:" using num 73
+Not Found in mapper "soil-to-fertilizer map:" using num 73
+Found in mapper "seed-to-soil map:": 73-> 71
+Not Found in mapper "humidity-to-location map:" using num 2
+Found in mapper "temperature-to-humidity map:": 2-> 71
+Found in mapper "light-to-temperature map:": 71-> 67
+Found in mapper "water-to-light map:": 67-> 74
+Not Found in mapper "fertilizer-to-water map:" using num 74
+Not Found in mapper "soil-to-fertilizer map:" using num 74
+Found in mapper "seed-to-soil map:": 74-> 72
+Not Found in mapper "humidity-to-location map:" using num 3
+Found in mapper "temperature-to-humidity map:": 3-> 2
+Not Found in mapper "light-to-temperature map:" using num 2
+Not Found in mapper "water-to-light map:" using num 2
+Found in mapper "fertilizer-to-water map:": 2-> 13
+Found in mapper "soil-to-fertilizer map:": 13-> 28
+Not Found in mapper "seed-to-soil map:" using num 28
+Not Found in mapper "humidity-to-location map:" using num 4
+Found in mapper "temperature-to-humidity map:": 4-> 3
+Not Found in mapper "light-to-temperature map:" using num 3
+Not Found in mapper "water-to-light map:" using num 3
+Found in mapper "fertilizer-to-water map:": 3-> 14
+Found in mapper "soil-to-fertilizer map:": 14-> 29
+Not Found in mapper "seed-to-soil map:" using num 29
+Not Found in mapper "humidity-to-location map:" using num 5
+Found in mapper "temperature-to-humidity map:": 5-> 4
+Not Found in mapper "light-to-temperature map:" using num 4
+Not Found in mapper "water-to-light map:" using num 4
+Found in mapper "fertilizer-to-water map:": 4-> 15
+Found in mapper "soil-to-fertilizer map:": 15-> 30
+Not Found in mapper "seed-to-soil map:" using num 30
+Not Found in mapper "humidity-to-location map:" using num 6
+Found in mapper "temperature-to-humidity map:": 6-> 5
+Not Found in mapper "light-to-temperature map:" using num 5
+Not Found in mapper "water-to-light map:" using num 5
+Found in mapper "fertilizer-to-water map:": 5-> 16
+Found in mapper "soil-to-fertilizer map:": 16-> 31
+Not Found in mapper "seed-to-soil map:" using num 31
+Not Found in mapper "humidity-to-location map:" using num 7
+Found in mapper "temperature-to-humidity map:": 7-> 6
+Not Found in mapper "light-to-temperature map:" using num 6
+Not Found in mapper "water-to-light map:" using num 6
+Found in mapper "fertilizer-to-water map:": 6-> 17
+Found in mapper "soil-to-fertilizer map:": 17-> 32
+Not Found in mapper "seed-to-soil map:" using num 32
+Not Found in mapper "humidity-to-location map:" using num 8
+Found in mapper "temperature-to-humidity map:": 8-> 7
+Not Found in mapper "light-to-temperature map:" using num 7
+Not Found in mapper "water-to-light map:" using num 7
+Found in mapper "fertilizer-to-water map:": 7-> 18
+Found in mapper "soil-to-fertilizer map:": 18-> 33
+Not Found in mapper "seed-to-soil map:" using num 33
+Not Found in mapper "humidity-to-location map:" using num 9
+Found in mapper "temperature-to-humidity map:": 9-> 8
+Not Found in mapper "light-to-temperature map:" using num 8
+Not Found in mapper "water-to-light map:" using num 8
+Found in mapper "fertilizer-to-water map:": 8-> 19
+Found in mapper "soil-to-fertilizer map:": 19-> 34
+Not Found in mapper "seed-to-soil map:" using num 34
+Not Found in mapper "humidity-to-location map:" using num 10
+Found in mapper "temperature-to-humidity map:": 10-> 9
+Not Found in mapper "light-to-temperature map:" using num 9
+Not Found in mapper "water-to-light map:" using num 9
+Found in mapper "fertilizer-to-water map:": 9-> 20
+Found in mapper "soil-to-fertilizer map:": 20-> 35
+Not Found in mapper "seed-to-soil map:" using num 35
+Not Found in mapper "humidity-to-location map:" using num 11
+Found in mapper "temperature-to-humidity map:": 11-> 10
+Not Found in mapper "light-to-temperature map:" using num 10
+Not Found in mapper "water-to-light map:" using num 10
+Found in mapper "fertilizer-to-water map:": 10-> 21
+Found in mapper "soil-to-fertilizer map:": 21-> 36
+Not Found in mapper "seed-to-soil map:" using num 36
+Not Found in mapper "humidity-to-location map:" using num 12
+Found in mapper "temperature-to-humidity map:": 12-> 11
+Not Found in mapper "light-to-temperature map:" using num 11
+Not Found in mapper "water-to-light map:" using num 11
+Found in mapper "fertilizer-to-water map:": 11-> 22
+Found in mapper "soil-to-fertilizer map:": 22-> 37
+Not Found in mapper "seed-to-soil map:" using num 37
+Not Found in mapper "humidity-to-location map:" using num 13
+Found in mapper "temperature-to-humidity map:": 13-> 12
+Not Found in mapper "light-to-temperature map:" using num 12
+Not Found in mapper "water-to-light map:" using num 12
+Found in mapper "fertilizer-to-water map:": 12-> 23
+Found in mapper "soil-to-fertilizer map:": 23-> 38
+Not Found in mapper "seed-to-soil map:" using num 38
+Not Found in mapper "humidity-to-location map:" using num 14
+Found in mapper "temperature-to-humidity map:": 14-> 13
+Not Found in mapper "light-to-temperature map:" using num 13
+Not Found in mapper "water-to-light map:" using num 13
+Found in mapper "fertilizer-to-water map:": 13-> 24
+Found in mapper "soil-to-fertilizer map:": 24-> 39
+Not Found in mapper "seed-to-soil map:" using num 39
+Not Found in mapper "humidity-to-location map:" using num 15
+Found in mapper "temperature-to-humidity map:": 15-> 14
+Not Found in mapper "light-to-temperature map:" using num 14
+Not Found in mapper "water-to-light map:" using num 14
+Found in mapper "fertilizer-to-water map:": 14-> 25
+Found in mapper "soil-to-fertilizer map:": 25-> 40
+Not Found in mapper "seed-to-soil map:" using num 40
+Not Found in mapper "humidity-to-location map:" using num 16
+Found in mapper "temperature-to-humidity map:": 16-> 15
+Not Found in mapper "light-to-temperature map:" using num 15
+Not Found in mapper "water-to-light map:" using num 15
+Found in mapper "fertilizer-to-water map:": 15-> 26
+Found in mapper "soil-to-fertilizer map:": 26-> 41
+Not Found in mapper "seed-to-soil map:" using num 41
+Not Found in mapper "humidity-to-location map:" using num 17
+Found in mapper "temperature-to-humidity map:": 17-> 16
+Not Found in mapper "light-to-temperature map:" using num 16
+Not Found in mapper "water-to-light map:" using num 16
+Found in mapper "fertilizer-to-water map:": 16-> 27
+Found in mapper "soil-to-fertilizer map:": 27-> 42
+Not Found in mapper "seed-to-soil map:" using num 42
+Not Found in mapper "humidity-to-location map:" using num 18
+Found in mapper "temperature-to-humidity map:": 18-> 17
+Not Found in mapper "light-to-temperature map:" using num 17
+Not Found in mapper "water-to-light map:" using num 17
+Found in mapper "fertilizer-to-water map:": 17-> 28
+Found in mapper "soil-to-fertilizer map:": 28-> 43
+Not Found in mapper "seed-to-soil map:" using num 43
+Not Found in mapper "humidity-to-location map:" using num 19
+Found in mapper "temperature-to-humidity map:": 19-> 18
+Not Found in mapper "light-to-temperature map:" using num 18
+Found in mapper "water-to-light map:": 18-> 25
+Found in mapper "fertilizer-to-water map:": 25-> 36
+Found in mapper "soil-to-fertilizer map:": 36-> 51
+Found in mapper "seed-to-soil map:": 51-> 99
+Not Found in mapper "humidity-to-location map:" using num 20
+Found in mapper "temperature-to-humidity map:": 20-> 19
+Not Found in mapper "light-to-temperature map:" using num 19
+Found in mapper "water-to-light map:": 19-> 26
+Found in mapper "fertilizer-to-water map:": 26-> 37
+Found in mapper "soil-to-fertilizer map:": 37-> 52
+Found in mapper "seed-to-soil map:": 52-> 100
+Not Found in mapper "humidity-to-location map:" using num 21
+Found in mapper "temperature-to-humidity map:": 21-> 20
+Not Found in mapper "light-to-temperature map:" using num 20
+Found in mapper "water-to-light map:": 20-> 27
+Found in mapper "fertilizer-to-water map:": 27-> 38
+Found in mapper "soil-to-fertilizer map:": 38-> 53
+Found in mapper "seed-to-soil map:": 53-> 101
+Not Found in mapper "humidity-to-location map:" using num 22
+Found in mapper "temperature-to-humidity map:": 22-> 21
+Not Found in mapper "light-to-temperature map:" using num 21
+Found in mapper "water-to-light map:": 21-> 28
+Found in mapper "fertilizer-to-water map:": 28-> 39
+Found in mapper "soil-to-fertilizer map:": 39-> 54
+Found in mapper "seed-to-soil map:": 54-> 52
+Not Found in mapper "humidity-to-location map:" using num 23
+Found in mapper "temperature-to-humidity map:": 23-> 22
+Not Found in mapper "light-to-temperature map:" using num 22
+Found in mapper "water-to-light map:": 22-> 29
+Found in mapper "fertilizer-to-water map:": 29-> 40
+Found in mapper "soil-to-fertilizer map:": 40-> 55
+Found in mapper "seed-to-soil map:": 55-> 53
+Not Found in mapper "humidity-to-location map:" using num 24
+Found in mapper "temperature-to-humidity map:": 24-> 23
+Not Found in mapper "light-to-temperature map:" using num 23
+Found in mapper "water-to-light map:": 23-> 30
+Found in mapper "fertilizer-to-water map:": 30-> 41
+Found in mapper "soil-to-fertilizer map:": 41-> 2
+Not Found in mapper "seed-to-soil map:" using num 2
+Not Found in mapper "humidity-to-location map:" using num 25
+Found in mapper "temperature-to-humidity map:": 25-> 24
+Not Found in mapper "light-to-temperature map:" using num 24
+Found in mapper "water-to-light map:": 24-> 31
+Found in mapper "fertilizer-to-water map:": 31-> 42
+Found in mapper "soil-to-fertilizer map:": 42-> 3
+Not Found in mapper "seed-to-soil map:" using num 3
+Not Found in mapper "humidity-to-location map:" using num 26
+Found in mapper "temperature-to-humidity map:": 26-> 25
+Not Found in mapper "light-to-temperature map:" using num 25
+Found in mapper "water-to-light map:": 25-> 32
+Found in mapper "fertilizer-to-water map:": 32-> 43
+Found in mapper "soil-to-fertilizer map:": 43-> 4
+Not Found in mapper "seed-to-soil map:" using num 4
+Not Found in mapper "humidity-to-location map:" using num 27
+Found in mapper "temperature-to-humidity map:": 27-> 26
+Not Found in mapper "light-to-temperature map:" using num 26
+Found in mapper "water-to-light map:": 26-> 33
+Found in mapper "fertilizer-to-water map:": 33-> 44
+Found in mapper "soil-to-fertilizer map:": 44-> 5
+Not Found in mapper "seed-to-soil map:" using num 5
+Not Found in mapper "humidity-to-location map:" using num 28
+Found in mapper "temperature-to-humidity map:": 28-> 27
+Not Found in mapper "light-to-temperature map:" using num 27
+Found in mapper "water-to-light map:": 27-> 34
+Found in mapper "fertilizer-to-water map:": 34-> 45
+Found in mapper "soil-to-fertilizer map:": 45-> 6
+Not Found in mapper "seed-to-soil map:" using num 6
+Not Found in mapper "humidity-to-location map:" using num 29
+Found in mapper "temperature-to-humidity map:": 29-> 28
+Not Found in mapper "light-to-temperature map:" using num 28
+Found in mapper "water-to-light map:": 28-> 35
+Found in mapper "fertilizer-to-water map:": 35-> 46
+Found in mapper "soil-to-fertilizer map:": 46-> 7
+Not Found in mapper "seed-to-soil map:" using num 7
+Not Found in mapper "humidity-to-location map:" using num 30
+Found in mapper "temperature-to-humidity map:": 30-> 29
+Not Found in mapper "light-to-temperature map:" using num 29
+Found in mapper "water-to-light map:": 29-> 36
+Found in mapper "fertilizer-to-water map:": 36-> 47
+Found in mapper "soil-to-fertilizer map:": 47-> 8
+Not Found in mapper "seed-to-soil map:" using num 8
+Not Found in mapper "humidity-to-location map:" using num 31
+Found in mapper "temperature-to-humidity map:": 31-> 30
+Not Found in mapper "light-to-temperature map:" using num 30
+Found in mapper "water-to-light map:": 30-> 37
+Found in mapper "fertilizer-to-water map:": 37-> 48
+Found in mapper "soil-to-fertilizer map:": 48-> 9
+Not Found in mapper "seed-to-soil map:" using num 9
+Not Found in mapper "humidity-to-location map:" using num 32
+Found in mapper "temperature-to-humidity map:": 32-> 31
+Not Found in mapper "light-to-temperature map:" using num 31
+Found in mapper "water-to-light map:": 31-> 38
+Found in mapper "fertilizer-to-water map:": 38-> 49
+Found in mapper "soil-to-fertilizer map:": 49-> 10
+Not Found in mapper "seed-to-soil map:" using num 10
+Not Found in mapper "humidity-to-location map:" using num 33
+Found in mapper "temperature-to-humidity map:": 33-> 32
+Not Found in mapper "light-to-temperature map:" using num 32
+Found in mapper "water-to-light map:": 32-> 39
+Found in mapper "fertilizer-to-water map:": 39-> 50
+Found in mapper "soil-to-fertilizer map:": 50-> 11
+Not Found in mapper "seed-to-soil map:" using num 11
+Not Found in mapper "humidity-to-location map:" using num 34
+Found in mapper "temperature-to-humidity map:": 34-> 33
+Not Found in mapper "light-to-temperature map:" using num 33
+Found in mapper "water-to-light map:": 33-> 40
+Found in mapper "fertilizer-to-water map:": 40-> 51
+Found in mapper "soil-to-fertilizer map:": 51-> 12
+Not Found in mapper "seed-to-soil map:" using num 12
+Not Found in mapper "humidity-to-location map:" using num 35
+Found in mapper "temperature-to-humidity map:": 35-> 34
+Not Found in mapper "light-to-temperature map:" using num 34
+Found in mapper "water-to-light map:": 34-> 41
+Found in mapper "fertilizer-to-water map:": 41-> 52
+Found in mapper "soil-to-fertilizer map:": 52-> 13
+Not Found in mapper "seed-to-soil map:" using num 13
+Min Location: 35
+Mappers: [Mapper { name: "humidity-to-location map:", table: {3981490698..4196921114: 1805974329..2021404745, 2988733812..3356696910: 2629055810..2997018908, 589945654..700952914: 3200087289..3311094549, 2252185620..2365759775: 2318272342..2431846497, 2435580058..2507216387: 562095366..633731695, 920191219..1261578732: 1030029700..1371417213, 3367781860..3393455885: 2997018907..3022692932, 2519816910..2988733813: 3311094548..3780011451, 3393455884..3533750781: 1644469750..1784764647, 3842084182..3960084357: 3790411396..3908411571, 1261578731..1334878053: 2104794468..2178093790, 1666455982..1939508521: 1371417212..1644469751, 501148922..522358606: 1784764646..1805974330, 220957931..428923615: 0..207965684, 1939508520..1999387753: 3140208057..3200087290, 1531661205..1615050930: 2021404744..2104794469, 1999387752..2252185621: 4042169428..4294967297, 3961198673..3981490699: 889549885..909841911, 431160017..482581599: 207965683..259387265, 532758551..547813285: 2431846496..2446901230, 3790677895..3826197789: 3071447765..3106967659, 2402339659..2435580059: 3106967658..3140208058, 1334878052..1414379657: 950528096..1030029701, 3747043542..3790677896: 3908411570..3952045924, 2365759774..2402339660: 633731694..670311580, 1470714761..1531661206: 501148922..562095367, 3960084356..3961198674: 949413779..950528097, 1414379656..1470714762: 2446901229..2503236335, 428923614..431160018: 259387264..261623668, 522358605..532758552: 3780011450..3790411397, 3533750780..3572469233: 4003450976..4042169429, 1615050929..1666455983: 3952045923..4003450977, 2507216386..2519816911: 936813255..949413780, 3572469232..3698288709: 2503236334..2629055811, 547813284..589945655: 2276139972..2318272343, 4196921113..4294967297: 2178093789..2276139973, 3356696909..3367781861: 909841910..920926862, 3826197788..3842084183: 920926861..936813256, 700952913..920191220: 670311579..889549886, 0..220957932: 261623667..482581599, 3698288708..3747043543: 3022692931..3071447766}, inverse_table: {207965683..259387265: 431160017..482581599, 1805974329..2021404745: 3981490698..4196921114, 2997018907..3022692932: 3367781860..3393455885, 2318272342..2431846497: 2252185620..2365759775, 3140208057..3200087290: 1939508520..1999387753, 670311579..889549886: 700952913..920191220, 3071447765..3106967659: 3790677895..3826197789, 3106967658..3140208058: 2402339659..2435580059, 1030029700..1371417213: 920191219..1261578732, 1371417212..1644469751: 1666455982..1939508521, 2104794468..2178093790: 1261578731..1334878053, 909841910..920926862: 3356696909..3367781861, 936813255..949413780: 2507216386..2519816911, 259387264..261623668: 428923614..431160018, 920926861..936813256: 3826197788..3842084183, 2276139972..2318272343: 547813284..589945655, 3952045923..4003450977: 1615050929..1666455983, 3790411396..3908411571: 3842084182..3960084357, 4042169428..4294967297: 1999387752..2252185621, 562095366..633731695: 2435580058..2507216387, 3780011450..3790411397: 522358605..532758552, 949413779..950528097: 3960084356..3961198674, 2503236334..2629055811: 3572469232..3698288709, 889549885..909841911: 3961198673..3981490699, 2431846496..2446901230: 532758551..547813285, 501148922..562095367: 1470714761..1531661206, 261623667..482581599: 0..220957932, 950528096..1030029701: 1334878052..1414379657, 3311094548..3780011451: 2519816910..2988733813, 2021404744..2104794469: 1531661205..1615050930, 2446901229..2503236335: 1414379656..1470714762, 3022692931..3071447766: 3698288708..3747043543, 4003450976..4042169429: 3533750780..3572469233, 3908411570..3952045924: 3747043542..3790677896, 0..207965684: 220957931..428923615, 1644469750..1784764647: 3393455884..3533750781, 1784764646..1805974330: 501148922..522358606, 2178093789..2276139973: 4196921113..4294967297, 633731694..670311580: 2365759774..2402339660, 3200087289..3311094549: 589945654..700952914, 2629055810..2997018908: 2988733812..3356696910} }, Mapper { name: "temperature-to-humidity map:", table: {2837901836..2854489163: 3627076350..3643663677, 1638774240..1970168748: 1680234883..2011629391, 2560870352..2615629616: 513039525..567798789, 3475937023..3475986600: 3143763337..3143812914, 662956301..684725864: 616300322..638069885, 1627086090..1637578391: 1220367800..1230860101, 4084637350..4117114053: 2874635247..2907111950, 817864973..920029029: 1357060315..1459224371, 1637578390..1638774241: 84480806..85676657, 1289368272..1310765427: 1459224370..1480621525, 920029028..1011614860: 991003502..1082589334, 3484967352..3516768138: 3111962552..3143763338, 4063232797..4084637351: 4095709499..4117114053, 3469205876..3475937024: 3694973648..3701704796, 684725863..736812859: 2701219423..2753306419, 2259499680..2354082486: 1125784995..1220367801, 4039680780..4063232798: 3955996260..3979548278, 2854489162..2970650385: 3979548277..4095709500, 2091337597..2175018875: 1591893253..1675574531, 736812858..815982828: 2622049454..2701219424, 1093842728..1289368273: 2426523910..2622049455, 2748209426..2760343394: 638069884..650203852, 1970168747..2091337598: 1230860100..1352028951, 3556417343..4039680781: 3143812913..3627076351, 815982827..817864974: 2011629390..2013511537, 655919326..662956302: 2753306418..2760343394, 3358280636..3469205877: 2907111949..3018037190, 1011614859..1015580146: 1676269597..1680234884, 2615629615..2748209427: 2293944099..2426523911, 2354082485..2387091632: 1480621524..1513630671, 3516768137..3556417344: 3655324442..3694973649, 2400631546..2449133081: 567798788..616300323, 2175018874..2259499681: 0..84480807, 3475986599..3484967353: 2837901836..2846882590, 2970650384..2998403043: 2846882589..2874635248, 323628225..328659591: 1352028950..1357060316, 0..280432564: 2013511536..2293944100, 2387091631..2400631547: 977463587..991003503, 1015580145..1093842729: 1513630670..1591893254, 2998403042..3252694508: 3701704795..3955996261, 2449133080..2560175286: 85676656..196718862, 328659590..655919327: 650203851..977463588, 3346619870..3358280637: 3643663676..3655324443, 3252694507..3346619871: 3018037189..3111962553, 2560175285..2560870353: 1675574530..1676269598, 1310765426..1627086091: 196718861..513039526, 280432563..323628226: 1082589333..1125784996}, inverse_table: {3694973648..3701704796: 3469205876..3475937024, 977463587..991003503: 2387091631..2400631547, 1459224370..1480621525: 1289368272..1310765427, 2622049454..2701219424: 736812858..815982828, 0..84480807: 2175018874..2259499681, 3018037189..3111962553: 3252694507..3346619871, 1513630670..1591893254: 1015580145..1093842729, 2837901836..2846882590: 3475986599..3484967353, 196718861..513039526: 1310765426..1627086091, 84480806..85676657: 1637578390..1638774241, 1125784995..1220367801: 2259499680..2354082486, 2426523910..2622049455: 1093842728..1289368273, 85676656..196718862: 2449133080..2560175286, 638069884..650203852: 2748209426..2760343394, 1680234883..2011629391: 1638774240..1970168748, 2874635247..2907111950: 4084637350..4117114053, 3643663676..3655324443: 3346619870..3358280637, 2907111949..3018037190: 3358280636..3469205877, 2293944099..2426523911: 2615629615..2748209427, 1676269597..1680234884: 1011614859..1015580146, 2013511536..2293944100: 0..280432564, 1591893253..1675574531: 2091337597..2175018875, 1357060315..1459224371: 817864973..920029029, 1230860100..1352028951: 1970168747..2091337598, 3143763337..3143812914: 3475937023..3475986600, 1082589333..1125784996: 280432563..323628226, 3701704795..3955996261: 2998403042..3252694508, 616300322..638069885: 662956301..684725864, 3655324442..3694973649: 3516768137..3556417344, 1480621524..1513630671: 2354082485..2387091632, 2846882589..2874635248: 2970650384..2998403043, 4095709499..4117114053: 4063232797..4084637351, 1352028950..1357060316: 323628225..328659591, 1220367800..1230860101: 1627086090..1637578391, 650203851..977463588: 328659590..655919327, 3111962552..3143763338: 3484967352..3516768138, 3143812913..3627076351: 3556417343..4039680781, 2701219423..2753306419: 684725863..736812859, 991003502..1082589334: 920029028..1011614860, 3955996260..3979548278: 4039680780..4063232798, 2753306418..2760343394: 655919326..662956302, 1675574530..1676269598: 2560175285..2560870353, 513039525..567798789: 2560870352..2615629616, 2011629390..2013511537: 815982827..817864974, 3627076350..3643663677: 2837901836..2854489163, 3979548277..4095709500: 2854489162..2970650385, 567798788..616300323: 2400631546..2449133081} }, Mapper { name: "light-to-temperature map:", table: {1456352798..1643978778: 1706897891..1894523871, 624435822..704880598: 1244459013..1324903789, 0..207034865: 85784517..292819382, 3613542439..3647705314: 2891254573..2925417448, 3309263777..3482255288: 2608592263..2781583774, 3482255287..3586796912: 4176101046..4280642671, 3215713737..3231118602: 4160696182..4176101047, 2613904452..2678497331: 3100809989..3165402868, 3024337577..3035541100: 4149492660..4160696183, 1835177046..1875928815: 1203707245..1244459014, 462426854..477826348: 704475267..719874761, 281665589..462426855: 1894523870..2075285136, 2678497330..3024337578: 3696584161..4042424409, 3035541099..3132788466: 3003562623..3100809990, 1348270322..1456352799: 596392791..704475268, 3662029939..3991815656: 2278806547..2608592264, 3647705313..3662029940: 4280642670..4294967297, 704880597..1114082358: 719874760..1129076521, 4098883907..4294967297: 3500500772..3696584162, 1749392529..1835177047: 0..85784518, 2278806547..2613904453: 3165402867..3500500773, 1114082357..1348270323: 1326100451..1560288417, 3586796911..3613542440: 2864509045..2891254574, 1643978777..1749392530: 292819381..398233134, 1875928814..1877125478: 1324903788..1326100452, 477826347..624435823: 1560288416..1706897892, 3991815655..4098883908: 4042424408..4149492661, 207034864..281665590: 1129076520..1203707246, 1877125477..2075285136: 398233133..596392792, 3231118601..3309263778: 2925417447..3003562624, 3132788465..3215713738: 2781583773..2864509046}, inverse_table: {3500500772..3696584162: 4098883907..4294967297, 4149492660..4160696183: 3024337577..3035541100, 3100809989..3165402868: 2613904452..2678497331, 4160696182..4176101047: 3215713737..3231118602, 1244459013..1324903789: 624435822..704880598, 1560288416..1706897892: 477826347..624435823, 2891254573..2925417448: 3613542439..3647705314, 398233133..596392792: 1877125477..2075285136, 3696584161..4042424409: 2678497330..3024337578, 704475267..719874761: 462426854..477826348, 0..85784518: 1749392529..1835177047, 292819381..398233134: 1643978777..1749392530, 1706897891..1894523871: 1456352798..1643978778, 1203707245..1244459014: 1835177046..1875928815, 4042424408..4149492661: 3991815655..4098883908, 3165402867..3500500773: 2278806547..2613904453, 3003562623..3100809990: 3035541099..3132788466, 719874760..1129076521: 704880597..1114082358, 1324903788..1326100452: 1875928814..1877125478, 4176101046..4280642671: 3482255287..3586796912, 4280642670..4294967297: 3647705313..3662029940, 2781583773..2864509046: 3132788465..3215713738, 2608592263..2781583774: 3309263777..3482255288, 85784517..292819382: 0..207034865, 1129076520..1203707246: 207034864..281665590, 596392791..704475268: 1348270322..1456352799, 2925417447..3003562624: 3231118601..3309263778, 2864509045..2891254574: 3586796911..3613542440, 2278806547..2608592264: 3662029939..3991815656, 1894523870..2075285136: 281665589..462426855, 1326100451..1560288417: 1114082357..1348270323} }, Mapper { name: "water-to-light map:", table: {2184905392..2298950585: 2598413684..2712458877, 688212171..767226477: 571736223..650750529, 3673052565..3723191814: 3090089298..3140228547, 3090089298..3173278186: 4169184467..4252373355, 833457772..840812948: 1365646204..1373001380, 1849185560..1944404619: 729747418..824966477, 1600958027..1849185561: 2130064037..2378291571, 3476912261..3673052566: 3193548680..3389688985, 1516067791..1600958028: 2511835025..2596725262, 201446459..204469066: 2940964744..2943987351, 3345314333..3476912262: 3389688984..3521286913, 2890412515..2942298928: 1878676528..1930562941, 2454933272..2565853411: 2400914887..2511835026, 767226476..833457773: 1373001379..1439232676, 538937587..682278718: 824966476..968307607, 2009337610..2064417498: 1310566317..1365646205, 1293495377..1330352327: 2904107795..2940964745, 22623317..201446460: 120487895..299311038, 204469065..279496092: 650750528..725777555, 2412172480..2454933273: 1738475707..1781236500, 2298950584..2412172481: 1625253811..1738475708, 441497558..538937588: 1781236499..1878676529, 1113238133..1253957271: 968307606..1109026744, 4262821917..4294967297: 3521286912..3553432292, 2565853410..2569823275: 725777554..729747419, 682278717..688212172: 2898174341..2904107796, 2064417497..2184905393: 0..120487896, 1330352326..1516067792: 2712458876..2898174342, 3302720391..3345314334: 4252373354..4294967297, 1944404618..2009337611: 1930562940..1995495933, 1253957270..1293495378: 1271028210..1310566318, 4209501783..4262821918: 3140228546..3193548681, 3723191813..4209501784: 3553432291..4039742262, 0..22623318: 2378291570..2400914888, 2942298927..2943987351: 2596725261..2598413685, 2704391379..2890412516: 1439232675..1625253812, 840812947..855739065: 556810106..571736224, 279496091..441497559: 1109026743..1271028211, 2569823274..2704391380: 1995495932..2130064038, 3173278185..3302720392: 4039742261..4169184468, 855739064..1113238134: 299311037..556810107}, inverse_table: {4252373354..4294967297: 3302720391..3345314334, 2598413684..2712458877: 2184905392..2298950585, 1373001379..1439232676: 767226476..833457773, 2596725261..2598413685: 2942298927..2943987351, 1109026743..1271028211: 279496091..441497559, 968307606..1109026744: 1113238133..1253957271, 1781236499..1878676529: 441497558..538937588, 1271028210..1310566318: 1253957270..1293495378, 2940964744..2943987351: 201446459..204469066, 725777554..729747419: 2565853410..2569823275, 2400914887..2511835026: 2454933272..2565853411, 3553432291..4039742262: 3723191813..4209501784, 1995495932..2130064038: 2569823274..2704391380, 571736223..650750529: 688212171..767226477, 1930562940..1995495933: 1944404618..2009337611, 299311037..556810107: 855739064..1113238134, 2712458876..2898174342: 1330352326..1516067792, 1878676528..1930562941: 2890412515..2942298928, 1625253811..1738475708: 2298950584..2412172481, 824966476..968307607: 538937587..682278718, 2904107795..2940964745: 1293495377..1330352327, 1365646204..1373001380: 833457772..840812948, 1439232675..1625253812: 2704391379..2890412516, 650750528..725777555: 204469065..279496092, 2378291570..2400914888: 0..22623318, 1310566317..1365646205: 2009337610..2064417498, 4169184467..4252373355: 3090089298..3173278186, 2130064037..2378291571: 1600958027..1849185561, 556810106..571736224: 840812947..855739065, 3521286912..3553432292: 4262821917..4294967297, 2511835025..2596725262: 1516067791..1600958028, 1738475707..1781236500: 2412172480..2454933273, 3193548680..3389688985: 3476912261..3673052566, 0..120487896: 2064417497..2184905393, 3090089298..3140228547: 3673052565..3723191814, 3389688984..3521286913: 3345314333..3476912262, 4039742261..4169184468: 3173278185..3302720392, 2898174341..2904107796: 682278717..688212172, 3140228546..3193548681: 4209501783..4262821918, 729747418..824966477: 1849185560..1944404619, 120487895..299311038: 22623317..201446460} }, Mapper { name: "fertilizer-to-water map:", table: {3912173308..3954570381: 936578795..978975868, 651809140..741998535: 697953317..788142712, 876081661..1244160118: 3582441824..3950520281, 257732262..273037140: 539558161..554863039, 2629130810..2678320519: 1695654665..1744844374, 2610695344..2629130811: 3131165165..3149600632, 3884012463..3912173309: 2060645804..2088806650, 50006317..65680233: 788142711..803816627, 3661533238..3719051612: 2088806649..2146325023, 745180691..873107181: 408449515..536376005, 1722281506..1751042331: 3553681000..3582441825, 2356473769..2358439652: 3149600631..3151566514, 1890693964..1997652248: 3446722717..3553681001, 9849113..50006318: 554863038..595020243, 479585511..528938543: 648600286..697953318, 2678320518..2878095652: 1495879532..1695654666, 2878095651..2995639598: 1792836692..1910380639, 3308279888..3430619105: 1910380638..2032719855, 1517759136..1561901005: 2834594844..2878736713, 385568770..479585512: 201901143..295917885, 1561901004..1653531623: 3355092099..3446722718, 1751042330..1890693965: 3950520280..4090171915, 2104045316..2356473770: 2878736712..3131165166, 3719051611..3816184129: 3257959582..3355092100, 1997652247..2033753244: 3151566513..3187667510, 2995639597..3043631917: 1744844373..1792836693, 528938542..582518587: 595020242..648600287, 3043631916..3308279889: 1231231560..1495879533, 1244160117..1517759137: 2172585320..2446184340, 3430619104..3456737857: 2446184339..2472303092, 3816184128..3857752166: 2752202873..2793770911, 741998534..745180692: 536376004..539558162, 1694355556..1722281507: 2032719854..2060645805, 2358439651..2610695345: 978975867..1231231561, 273037139..385568771: 295917884..408449516, 582518586..651809141: 803816626..873107181, 4234470162..4294967297: 876081661..936578796, 3456737856..3661533239: 4090171914..4294967297, 3954570380..4234470163: 2472303091..2752202874, 3857752165..3884012464: 2146325022..2172585321, 1653531622..1694355557: 2793770910..2834594845, 65680232..257732263: 9849113..201901144, 2033753243..2104045317: 3187667509..3257959583}, inverse_table: {539558161..554863039: 257732262..273037140, 3582441824..3950520281: 876081661..1244160118, 3950520280..4090171915: 1751042330..1890693965, 648600286..697953318: 479585511..528938543, 3149600631..3151566514: 2356473769..2358439652, 3355092099..3446722718: 1561901004..1653531623, 788142711..803816627: 50006317..65680233, 936578795..978975868: 3912173308..3954570381, 201901143..295917885: 385568770..479585512, 2088806649..2146325023: 3661533238..3719051612, 1495879532..1695654666: 2678320518..2878095652, 2834594844..2878736713: 1517759136..1561901005, 1744844373..1792836693: 2995639597..3043631917, 3257959582..3355092100: 3719051611..3816184129, 2446184339..2472303092: 3430619104..3456737857, 2032719854..2060645805: 1694355556..1722281507, 697953317..788142712: 651809140..741998535, 408449515..536376005: 745180691..873107181, 2472303091..2752202874: 3954570380..4234470163, 1695654665..1744844374: 2629130810..2678320519, 3553681000..3582441825: 1722281506..1751042331, 3151566513..3187667510: 1997652247..2033753244, 554863038..595020243: 9849113..50006318, 536376004..539558162: 741998534..745180692, 2878736712..3131165166: 2104045316..2356473770, 1792836692..1910380639: 2878095651..2995639598, 2752202873..2793770911: 3816184128..3857752166, 595020242..648600287: 528938542..582518587, 2793770910..2834594845: 1653531622..1694355557, 876081661..936578796: 4234470162..4294967297, 3187667509..3257959583: 2033753243..2104045317, 1910380638..2032719855: 3308279888..3430619105, 295917884..408449516: 273037139..385568771, 2060645804..2088806650: 3884012463..3912173309, 4090171914..4294967297: 3456737856..3661533239, 803816626..873107181: 582518586..651809141, 978975867..1231231561: 2358439651..2610695345, 3131165165..3149600632: 2610695344..2629130811, 9849113..201901144: 65680232..257732263, 2172585320..2446184340: 1244160117..1517759137, 1231231560..1495879533: 3043631916..3308279889, 3446722717..3553681001: 1890693964..1997652248, 2146325022..2172585321: 3857752165..3884012464} }, Mapper { name: "soil-to-fertilizer map:", table: {3807789063..3851066914: 3846919647..3890197498, 2714844607..2905533655: 2635212237..2825901285, 1819919838..2086205437: 599866905..866152504, 806620565..956586243: 1889956104..2039921782, 2262442546..2643726154: 2039921781..2421205389, 586061766..806620566: 1120113062..1340671862, 3756947172..3768288788: 2547872150..2559213766, 2905533654..3032200417: 2421205388..2547872151, 258383552..337523955: 3533868176..3613008579, 3286160975..3399542288: 0..113381313, 4255836712..4294967297: 3807789063..3846919648, 2086205436..2111259136: 217408321..242462021, 3851066913..4255836713: 3890197497..4294967297, 2111259135..2111534092: 1340671861..1340946818, 3032200416..3286160976: 866152503..1120113063, 1753855801..1777831916: 3613008578..3636984693, 0..258383553: 1631572552..1889956105, 337523954..586061767: 1383034740..1631572553, 1777831915..1819919839: 1340946817..1383034741, 2659570395..2714844608: 2825901284..2881175497, 956586242..1503365159: 2987089260..3533868177, 1670861921..1701865703: 2604208456..2635212238, 3399542287..3756947173: 242462020..599866906, 3768288787..3804481456: 129225554..165418223, 1503365158..1670861922: 3636984692..3804481456, 1701865702..1753855802: 165418222..217408322, 2111534091..2217447856: 2881175496..2987089261, 2643726153..2659570396: 113381312..129225555, 2217447855..2262442547: 2559213765..2604208457}, inverse_table: {0..113381313: 3286160975..3399542288, 2039921781..2421205389: 2262442546..2643726154, 2421205388..2547872151: 2905533654..3032200417, 3613008578..3636984693: 1753855801..1777831916, 2825901284..2881175497: 2659570395..2714844608, 242462020..599866906: 3399542287..3756947173, 2881175496..2987089261: 2111534091..2217447856, 3807789063..3846919648: 4255836712..4294967297, 1889956104..2039921782: 806620565..956586243, 866152503..1120113063: 3032200416..3286160976, 1383034740..1631572553: 337523954..586061767, 217408321..242462021: 2086205436..2111259136, 3890197497..4294967297: 3851066913..4255836713, 2547872150..2559213766: 3756947172..3768288788, 1340671861..1340946818: 2111259135..2111534092, 2987089260..3533868177: 956586242..1503365159, 2559213765..2604208457: 2217447855..2262442547, 2635212237..2825901285: 2714844607..2905533655, 599866905..866152504: 1819919838..2086205437, 129225554..165418223: 3768288787..3804481456, 2604208456..2635212238: 1670861921..1701865703, 1340946817..1383034741: 1777831915..1819919839, 165418222..217408322: 1701865702..1753855802, 3636984692..3804481456: 1503365158..1670861922, 1120113062..1340671862: 586061766..806620566, 1631572552..1889956105: 0..258383553, 3533868176..3613008579: 258383552..337523955, 3846919647..3890197498: 3807789063..3851066914, 113381312..129225555: 2643726153..2659570396} }, Mapper { name: "seed-to-soil map:", table: {1203272644..1255408891: 496269031..548405278, 953364929..1203272645: 1005501175..1255408891, 496269031..953364930: 548405277..1005501176}, inverse_table: {548405277..1005501176: 496269031..953364930, 496269031..548405278: 1203272644..1255408891, 1005501175..1255408891: 953364929..1203272645} }, Mapper { name: "", table: {}, inverse_table: {} }]
