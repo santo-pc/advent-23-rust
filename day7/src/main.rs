@@ -161,7 +161,7 @@ fn calc_type(letters: &str) -> HandType {
 }
 
 #[test]
-fn test_template() {
+fn test_ordering_hands() {
     let weaker = Hand::new(HandType::Full, 20, "T55J5".to_owned());
     let stronger = Hand::new(HandType::Full, 20, "QQQJA".to_owned());
     let lowest = Hand::new(HandType::OnePair, 20, "QQQJA".to_owned());
