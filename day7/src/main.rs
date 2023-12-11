@@ -4,11 +4,12 @@ use std::{
     fs::File,
     io::{self, BufRead},
     path::Path,
-    thread::current,
 };
-const CARDS: Vec<char> = vec![
+
+const CARDS: [char; 13] = [
     'A', 'K', 'Q', 'T', '9', '8', '7', '6', '5', '4', '3', '2', 'J',
 ];
+
 #[derive(PartialEq, PartialOrd, Debug, Ord, Eq, Clone, Copy)]
 enum HandType {
     HighCard,
@@ -20,7 +21,7 @@ enum HandType {
     Five,
 }
 
-#[derive(Debug, Eq, PartialEq, Ord, Clone)]
+#[derive(Debug, Eq, PartialEq, Clone)]
 struct Hand {
     hand: HandType,
     value: u32,
@@ -37,6 +38,13 @@ impl Hand {
     }
 }
 
+impl Ord for Hand {
+    fn cmp(&self, other: &Self) -> Ordering {
+        self.partial_cmp(other).unwrap()
+    }
+}
+
+#[allow(clippy::all)]
 impl PartialOrd for Hand {
     fn partial_cmp(&self, other: &Self) -> Option<Ordering> {
         if self.hand == other.hand {
@@ -50,28 +58,14 @@ impl PartialOrd for Hand {
         }
         Some(self.hand.cmp(&other.hand))
     }
+}
 
-    fn lt(&self, other: &Self) -> bool {
-        matches!(self.partial_cmp(other), Some(std::cmp::Ordering::Less))
-    }
-
-    fn le(&self, other: &Self) -> bool {
-        matches!(
-            self.partial_cmp(other),
-            Some(std::cmp::Ordering::Less | std::cmp::Ordering::Equal)
-        )
-    }
-
-    fn gt(&self, other: &Self) -> bool {
-        matches!(self.partial_cmp(other), Some(std::cmp::Ordering::Greater))
-    }
-
-    fn ge(&self, other: &Self) -> bool {
-        matches!(
-            self.partial_cmp(other),
-            Some(std::cmp::Ordering::Greater | std::cmp::Ordering::Equal)
-        )
-    }
+fn get_char_value(c: char) -> u32 {
+    let mut cards = CARDS;
+    cards.reverse();
+    let value = cards.iter().position(|i| *i == c).unwrap() as u32;
+    println!("Value of char: {:?}: {:?}", c, value);
+    value
 }
 
 fn read_lines<P>(filename: P) -> io::Result<io::Lines<io::BufReader<File>>>
@@ -91,9 +85,9 @@ fn main() {
             .filter(|(_, l)| !l.is_empty())
             .for_each(|(_i, line)| {
                 let parts: Vec<&str> = line.split(' ').collect::<Vec<&str>>();
-                println!("line {:?}", line);
-
-                list.push(build_hand(parts));
+                let value = parts[1].parse::<u32>().unwrap();
+                let letters = parts[0].to_owned();
+                list.push(build_hand(&letters, value));
             });
 
         list.sort();
@@ -101,70 +95,57 @@ fn main() {
             .iter()
             .enumerate()
             .map(|(i, hand)| {
-                println!("Hand {}: {:?}", i, hand);
+                println!("Hand Rank {}: {:?}", i + 1, hand);
                 (i as u32 + 1) * hand.value
             })
             .sum();
         println!("Total: {}", total);
     }
 }
-fn build_hand(parts: Vec<&str>) -> Hand {
-    let value = parts[1].parse::<u32>().unwrap();
-    let letters = parts[0].to_owned();
-    let type_hand = calc_type(&letters);
-    let hand = Hand::new(type_hand, value, letters);
 
-    let mut generated_hands = HashMap::new();
-    generated_hands.insert(hand.letters.clone(), hand.hand.to_owned());
+fn build_hand(letters: &str, value: u32) -> Hand {
+    let type_hand = calc_type(letters);
 
-    if hand.letters.contains('J') {
-        let jays = hand
-            .letters
-            .chars()
-            .filter(|c| *c == 'J')
-            .collect::<Vec<char>>()
-            .len();
-        let matrix: Vec<String> = Vec::new();
-        for (i, l) in letters.chars().enumerate() {
-            if l == 'J' {
-                for card in CARDS {
-                    shuffle()
-                }
-            }
-        }
+    // simple hand
+    if !letters.contains('J') {
+        return Hand::new(type_hand, value, letters.to_string());
     }
 
-    hand
+    // hand with one or more Js
+    let mut combis: Vec<String> = Vec::new();
+    shuffle(0, letters, "", &mut combis);
+    let max = combis
+        .iter()
+        .map(|combi| (combi, calc_type(combi)))
+        .max_by(|x, y| x.1.cmp(&y.1));
+    Hand::new(max.unwrap().1, value, letters.to_string())
 }
 
-fn shuffle(st: &str) -> Vec<String> {
-    let result: Vec<String> = Vec::new();
-    if st.is_empty() {
-        return Vec::new();
-    }
-
-    for (i, s) in st.chars().enumerate() {
-        if s == 'J' {
+fn shuffle(i: usize, og: &str, so_far: &str, list: &mut Vec<String>) {
+    if let Some(c) = og.chars().nth(i) {
+        if c == 'J' {
             for card in CARDS {
-                let current = card.to_string().push_str(&st[i..]);
-
-                for combi in shuffle(current[i + 1].to_owned()) {
-                    result.push(combi);
-                }
+                let mut current = String::from(so_far);
+                current.push(card);
+                shuffle(i + 1, og, &current, list);
             }
         } else {
-            result.push(st.to_owned());
+            let mut new_so_far = so_far.to_string();
+            new_so_far.push(c);
+            shuffle(i + 1, og, &new_so_far, list);
         }
+    } else {
+        // base case, reached end of string and store whats build so far
+        list.push(so_far.to_string());
     }
-    result
 }
 
 fn calc_type(letters: &str) -> HandType {
-    let mut letter_counts: HashMap<char, i32> = HashMap::new();
+    let mut frequencies: HashMap<char, i32> = HashMap::new();
     letters.chars().for_each(|c| {
-        *letter_counts.entry(c).or_insert(0) += 1;
+        *frequencies.entry(c).or_insert(0) += 1;
     });
-    match (letter_counts.values().max().unwrap(), letter_counts.len()) {
+    match (frequencies.values().max().unwrap(), frequencies.len()) {
         (1, _) => HandType::HighCard,
         (2, 4) => HandType::OnePair,
         (2, 3) => HandType::TwoPairs,
@@ -177,18 +158,6 @@ fn calc_type(letters: &str) -> HandType {
         (5, _) => HandType::Five,
         _ => panic!("Oops"),
     }
-}
-
-fn calc_value(frequencies: &HashMap<char, i32>) -> u32 {
-    frequencies.keys().map(|k| get_char_value(*k)).sum()
-}
-
-fn get_char_value(c: char) -> u32 {
-    let cards = CARDS.clone();
-    cards.reverse();
-    let value = cards.iter().position(|i| *i == c).unwrap() as u32;
-    println!("Value of char: {:?}: {:?}", c, value);
-    value
 }
 
 #[test]
@@ -207,6 +176,29 @@ fn test_template() {
             .rev()
             .collect::<Vec<Hand>>()
     );
+}
+
+#[test]
+fn test_build_with_combinations() {
+    {
+        let mut combinations: Vec<String> = Vec::new();
+        let lettes = "J1234";
+        shuffle(0, lettes, "", &mut combinations);
+        assert_eq!(13, combinations.len());
+    }
+
+    {
+        let mut combinations: Vec<String> = Vec::new();
+        let lettes = "J123J";
+        shuffle(0, lettes, "", &mut combinations);
+        assert_eq!(u64::pow(13, 2) as usize, combinations.len());
+    }
+    {
+        let mut combinations: Vec<String> = Vec::new();
+        let lettes = "JJJJJ";
+        shuffle(0, lettes, "", &mut combinations);
+        assert_eq!(u64::pow(13, 5) as usize, combinations.len());
+    }
 }
 
 #[test]
