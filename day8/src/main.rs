@@ -1,4 +1,3 @@
-use num::integer::lcm;
 use std::{
     collections::HashMap,
     fs::File,
