@@ -1,4 +1,5 @@
 use std::{
+    collections::HashSet,
     fs::File,
     io::{self, BufRead},
     path::Path,
@@ -61,6 +62,8 @@ fn main() {
         let mut current1: Coord = origin;
         let mut current2: Coord = origin;
         let mut steps = 1;
+        let mut looper: HashSet<Coord> = HashSet::new();
+        looper.insert(origin);
         println!("Starting walk:\n\n");
         loop {
             current1 = add_coords(&current1, &dir1);
@@ -71,6 +74,10 @@ fn main() {
 
             scores[current1.0 as usize][current1.1 as usize] = 1; //steps;
             scores[current2.0 as usize][current2.1 as usize] = 1; // steps;
+
+            looper.insert(current1);
+            looper.insert(current2);
+
             steps += 1;
             if current1 == current2
                 || *karte.get_at(current1).unwrap() == 'S'
@@ -79,20 +86,33 @@ fn main() {
                 break;
             }
         }
-
         scores.iter().enumerate().for_each(|(_row, v)| {
             v.iter().enumerate().for_each(|(_col, c)| {
-                print!("{}\t", c);
+                if (_row as i32, _col as i32) == origin {
+                    print!("S");
+                } else {
+                    print!("{}", c);
+                }
             });
             println!();
         });
 
         let max = scores.iter().flatten().max();
         println!("Max: {}", max.unwrap());
+        println!("Shoe Lace: {}", shoe_lace(looper));
     }
 }
 fn add_coords(c1: &Coord, c2: &Coord) -> Coord {
     (c1.0 + c2.0, c1.1 + c2.1)
+}
+fn shoe_lace(looper: HashSet<Coord>) -> f32 {
+    // do shoe lace method
+    let sums = looper
+        .into_iter()
+        .reduce(|acc, p| (acc.0 + p.1, acc.1 + p.0))
+        .unwrap();
+
+    0.5 * f32::abs(sums.0 as f32 - sums.1 as f32)
 }
 
 fn get_step(dir: Coord, c: char) -> Coord {
@@ -116,11 +136,28 @@ fn get_step(dir: Coord, c: char) -> Coord {
     }
 }
 
+fn valids_initiators(dir: &Coord, c: &char) -> bool {
+    matches!(
+        (dir, c),
+        (&UP, '|')
+            | (&UP, '7')
+            | (&UP, 'F')
+            | (&DOWN, '|')
+            | (&DOWN, 'L')
+            | (&DOWN, 'J')
+            | (&RIGHT, '-')
+            | (&RIGHT, 'J')
+            | (&RIGHT, '7')
+            | (&LEFT, '-')
+            | (&LEFT, 'F')
+            | (&LEFT, 'L')
+    )
+}
 fn find_initiators(karte: &Karte, origin: &Coord) -> (Coord, Coord) {
     let mut starters: Vec<Coord> = Vec::new();
     for dir in DIRECTIONS {
         if let Some(c) = karte.get_at_add(origin, dir) {
-            if *c == '|' || *c == '-' {
+            if valids_initiators(dir, c) {
                 println!(
                     "Found initiator c: {:?} at: {:?}",
                     c,
