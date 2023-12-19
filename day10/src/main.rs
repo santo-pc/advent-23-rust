@@ -17,7 +17,7 @@ struct Karte {
     pub matrix: Vec<Vec<char>>,
 }
 
-const DIRECTIONS: &[Coord] = &[UP, DOWN, LEFT, RIGHT];
+const DIRECTIONS: &[Coord] = &[UP, RIGHT, DOWN, LEFT];
 const UP: Coord = (-1, 0);
 const DOWN: Coord = (1, 0);
 const LEFT: Coord = (0, -1);
@@ -43,7 +43,7 @@ impl Karte {
 
 type Coord = (i32, i32);
 fn main() {
-    if let Ok(lines) = read_lines("input2.txt") {
+    if let Ok(lines) = read_lines("input.txt") {
         let mut origin: Coord = (0, 0);
         let mut scores: Vec<Vec<u32>> = Vec::new();
         let mut karte = Karte::new();
@@ -57,31 +57,30 @@ fn main() {
         });
 
         println!("Origin: {:?}", origin);
-        let (mut dir1, mut dir2) = find_initiators(&karte, &origin);
+        let (mut dir1, mut _dir2) = find_initiators(&karte, &origin);
 
         let mut current1: Coord = origin;
-        let mut current2: Coord = origin;
-        let mut steps = 1;
+        // let mut current2: Coord = origin;
+        let mut _steps = 1;
         let mut looper: HashSet<Coord> = HashSet::new();
         looper.insert(origin);
         println!("Starting walk:\n\n");
         loop {
             current1 = add_coords(&current1, &dir1);
-            current2 = add_coords(&current2, &dir2);
+            // current2 = add_coords(&current2, &dir2);
 
             dir1 = get_step(dir1, *karte.get_at(current1).unwrap());
-            dir2 = get_step(dir2, *karte.get_at(current2).unwrap());
+            // dir2 = get_step(dir2, *karte.get_at(current2).unwrap());
 
-            scores[current1.0 as usize][current1.1 as usize] = 1; //steps;
-            scores[current2.0 as usize][current2.1 as usize] = 1; // steps;
+            scores[current1.0 as usize][current1.1 as usize] = 1;
 
             looper.insert(current1);
-            looper.insert(current2);
+            // looper.insert(current2);
 
-            steps += 1;
-            if current1 == current2
-                || *karte.get_at(current1).unwrap() == 'S'
-                || *karte.get_at(current2).unwrap() == 'S'
+            // steps += 1;
+            if current1 == origin
+            // || *karte.get_at(current1).unwrap() == 'S'
+            // || *karte.get_at(current2).unwrap() == 'S'
             {
                 break;
             }
@@ -105,14 +104,38 @@ fn main() {
 fn add_coords(c1: &Coord, c2: &Coord) -> Coord {
     (c1.0 + c2.0, c1.1 + c2.1)
 }
-fn shoe_lace(looper: HashSet<Coord>) -> f32 {
-    // do shoe lace method
-    let sums = looper
-        .into_iter()
-        .reduce(|acc, p| (acc.0 + p.1, acc.1 + p.0))
-        .unwrap();
+// fn shoe_lace(looper: HashSet<Coord>) -> f32 {
+// do shoe lace method
+//    let sums = looper
+//        .into_iter()
+//        .reduce(|acc, p| (acc.0 + p.1, acc.1 + p.0))
+//        .unwrap();
 
-    0.5 * f32::abs(sums.0 as f32 - sums.1 as f32)
+//    0.5 * f32::abs(sums.0 as f32 - sums.1 as f32)
+// }
+
+// Convert the HashSet to a Vec for easier iteration
+fn shoe_lace(looper: HashSet<Coord>) -> f32 {
+    let coordinates: Vec<&Coord> = looper.iter().collect();
+
+    let n = coordinates.len();
+    if n < 3 {
+        panic!("Invalid input: There must be at least 3 coordinates to form a polygon.");
+    }
+
+    let mut sum: f32 = 0.0;
+    for i in 0..n - 1 {
+        let current = coordinates[i];
+        let next = coordinates[i + 1];
+        sum += (current.0 * next.1 - next.0 * current.1) as f32;
+    }
+
+    // Add the last term (xn*y1 - x1*yn)
+    let first = coordinates[0];
+    let last = coordinates[n - 1];
+    sum += (last.0 * first.1 - first.0 * last.1) as f32;
+
+    0.5 * sum.abs()
 }
 
 fn get_step(dir: Coord, c: char) -> Coord {
