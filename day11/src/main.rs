@@ -18,7 +18,6 @@ where
 fn main() {
     if let Ok(lines) = read_lines("input2.txt") {
         let mut galaxy: Vec<Vec<char>> = Vec::new();
-        let mut expand: Vec<Vec<bool>> = Vec::new();
         lines.flatten().enumerate().for_each(|(i, line)| {
             println!("Line {:?}: {:?}", i, line);
             galaxy.push(line.chars().collect());
@@ -48,6 +47,23 @@ fn main() {
         for row in &galaxy {
             println!("{:?}", row);
         }
+
+        let mut hashes: Vec<Coord> = Vec::new();
+        galaxy.iter().enumerate().for_each(|(i, v)| {
+            v.iter().enumerate().for_each(|(j, c)| {
+                if *c == '#' {
+                    hashes.push(Coord(i as i32, j as i32));
+                }
+            })
+        });
+
+        for c in &hashes {
+            for c2 in &hashes {
+                if c != c2 {
+                    bfs(&c, &galaxy, &c2);
+                }
+            }
+        }
     }
 }
 
@@ -72,8 +88,8 @@ const DOWN: Coord = Coord(1, 0);
 const LEFT: Coord = Coord(0, -1);
 const RIGHT: Coord = Coord(0, 1);
 
-fn bfs(current: Coord, galaxy: &[Vec<char>], target: Coord) -> u32 {
-    let start = current;
+fn bfs(current: &Coord, galaxy: &[Vec<char>], target: &Coord) -> u32 {
+    let start = current.clone();
     let mut queue: Vec<Coord> = Vec::new();
     let mut visited: HashSet<Coord> = HashSet::new();
 
